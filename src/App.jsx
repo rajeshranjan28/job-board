@@ -6,6 +6,11 @@ import {
   Login,
   DashboardLayout,
   Error,
+  AddJob,
+  Stats,
+  AllJobs,
+  Profile,
+  Admin,
  } from './pages';
 
 
@@ -30,6 +35,27 @@ import {
       {
         path: 'dashboard',
         element: <DashboardLayout />,
+        children: [
+          {
+            index: true,
+            element: <AddJob />,
+          },
+          { path: 'stats',
+            element: <Stats /> 
+          },
+          {
+            path: 'all-jobs',
+            element: <AllJobs />,
+          },
+          {
+            path: 'profile',
+            element: <Profile />,
+          },
+          {
+            path: 'admin',
+            element: <Admin />,
+          },
+        ],
       },
     ],
   },

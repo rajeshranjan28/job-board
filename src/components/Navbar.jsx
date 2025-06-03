@@ -1,6 +1,6 @@
- import Wrapper from '../assets/wrappers/Navbar';
+import Wrapper from '../assets/wrappers/Navbar';
  import { FaAlignLeft } from 'react-icons/fa';
- import Logo from './Logo';
+ import Logo from './logo';
  import { useDashboardContext } from '../pages/DashboardLayout';
  const Navbar = () => {
   const { toggleSidebar } = useDashboardContext();
